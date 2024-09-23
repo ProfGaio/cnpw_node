@@ -10,7 +10,7 @@ app.get('/', async(req,res)=>{
 })
 
 //Rota para dados
-app.get('/cidadesbr', async (req,res)=>{
+app.get('/cidades', async (req,res)=>{
     try{
         //Exemplo de API que retorna dados sobre cidades
         const resposta = await axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios')
